@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <Button
+        android:id="@+id/anfordern"
+        android:layout_width="132dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="404dp"
+        android:background="@drawable/radius"
+        android:shadowColor="#292727"
+        android:shadowRadius="100"
+        android:text="Anfrodern"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="122dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:entries="@array/Raum_Auswählen"
+        android:prompt="@string/country_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="119dp"
+        android:src="@drawable/th"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="56dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/langauge"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.347"
+        tools:srcCompat="@drawable/langauge" />
+
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Grund eingeben: "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="323dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/zurueck"
+        android:layout_width="101dp"
+        android:layout_height="30dp"
+        android:background="@drawable/radius"
+        android:shadowColor="#292727"
+        android:shadowRadius="100"
+        android:text="Zurück"
+        app:layout_constraintBottom_toTopOf="@+id/reason"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.088" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

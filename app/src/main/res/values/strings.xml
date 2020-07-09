@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Second_Time</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="Raum_Auswählen">
+        <item>1.110</item>
+        <item>1.111</item>
+        <item>1.114</item>
+        <item>1.115</item>
+    </string-array>
+
+
+</resources>
